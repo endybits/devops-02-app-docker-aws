@@ -4,7 +4,9 @@
 ### Step 1: Application Setup 🏗️
 
 - Ensure your application code is organized within the "your-app-folder" directory.
-- Create a Dockerfile within this folder to define how your application should be packaged into a Docker image. 🐳
+- Create a [Dockerfile](app/Dockerfile) within this folder to define how your application should be packaged into a Docker image. 🐳
+- Test creating a image `docker build --tag devops-02-image .`
+- Create a container `docker run --name devops-02-container -p 8080:80 devops-02-image`
 
 ### Step 2: Packer Configuration ⚙️
 
